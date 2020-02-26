@@ -24,41 +24,48 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <jackson.version>2.9.8</jackson.version>
         <postgresql.version>42.1.4</postgresql.version>
+        <mybatisplus.version>3.2.0</mybatisplus.version>
+        <velocity.version>1.7</velocity.version>
         <skipTests>true</skipTests>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--这玩意虽然省事，但是有利有弊吧，注意idea要安装对应的插件-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-boot-starter -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatisplus.version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.2.0</version>
+            <version>${mybatisplus.version}</version>
         </dependency>
 
         <!-- postgresql -->
@@ -85,6 +92,14 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity -->
+        <!--一定要有这个玩意，模板，否则mybatisplus逆向工程生成代码找不到模板-->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
         </dependency>
 
     </dependencies>
