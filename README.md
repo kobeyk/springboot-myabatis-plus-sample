@@ -1,2 +1,2 @@
-# springboot-myabatis-pus-sample
+# springboot-myabatis-plus-sample
 SpringBoot集成MybatisPlus实现单表增删改查的例子
