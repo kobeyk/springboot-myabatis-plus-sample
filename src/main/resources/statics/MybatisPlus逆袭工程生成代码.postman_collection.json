@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "411150ea-9f03-45c3-b7ec-887ba99ff2e2",
+		"name": "MybatisPlus逆袭工程生成代码",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "注册用户",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"kobe\",\n\t\"password\":\"123456a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/user/save",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户查询（分页）",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/user/query",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"user",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "按登录名模糊查询",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/query/ko",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"query",
+						"ko"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
