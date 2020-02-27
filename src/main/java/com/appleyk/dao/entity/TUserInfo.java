@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- *  用户详细信息数据实体类 -- mybaitsplus 逆向工程生成的代码，稍加改造
+ *  用户详细信息数据实体类 -- mybatisplus 逆向工程生成的代码，稍加改造
  * </p>
  *
  * @author Appleyk
