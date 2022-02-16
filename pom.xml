@@ -23,7 +23,7 @@
         <!-- 编译时的编码 -->
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <jackson.version>2.9.8</jackson.version>
-        <postgresql.version>42.1.4</postgresql.version>
+        <postgresql.version>42.3.3</postgresql.version>
         <mybatisplus.version>3.2.0</mybatisplus.version>
         <velocity.version>1.7</velocity.version>
         <skipTests>true</skipTests>
